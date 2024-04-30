@@ -13,7 +13,7 @@
 
         .container {
             background-color: #E9E9E9;
-            margin: auto;
+            margin: auto;            
             width: 600px;
             box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
             /*Borda superior*/
@@ -24,16 +24,14 @@
 
         .header {
             /*Margem interna*/
-            padding: 20px;
+            padding: 40px;
         }
 
         .flex-container {
             /*Distribuição dos elementos*/    
-            display: flex;
-            background-color: #006A6A;
+            display: flex;            
             /*Preenchendo com espaços ao lado*/
-            justify-content: space-around;
-            padding: 20px;
+            justify-content: space-around;            
         }
 
         .header-title {
@@ -47,9 +45,58 @@
             color: #009E9E;
             font-size: 20px;
             font-weight: 500;            
-            margin-bottom: 15px;
-            
+            margin-bottom: 15px;            
         } 
+
+        .col-1 {
+            background-color: #006A6A;
+            width: 50%;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+
+        .col-2 {
+            background-color: #009E9E;
+            width: 50%;
+            padding: 20px;
+            color: #FFF;
+        }    
+        
+        .subscription-title {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .month {
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+        }        
+
+        .button {
+            width: 100%;
+            /*Define espaço ao redor do elemento*/
+            padding: 15px 32px;
+            color: #006A6A;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #CCCCCC;
+        }
+
+        .button:hover{
+            background-color: #E9E9E9;    
+        }
+
+                                
         
     </style>
 
@@ -69,10 +116,23 @@
             </div>                        
         </div>
         <div class="flex-container">
-            <div>
-                Coluna 1        
+            <div class="col-1">
+                <div class="subscription-title">
+                    Assinatura mensal:
+                </div>
+                
+                <div>
+                    <span class="price">R$ 99,99</span> <span class="month">por mês.</span>  
+                </div>                    
+                
+                <div>
+                    Cancela a qualquer momento.
+                </div>
+                
+                <button class="button">Assine Agora</button>
+                
             </div>
-            <div>
+            <div class="col-2">
                 Coluna 2            
             </div>
         </div>
