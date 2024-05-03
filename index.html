@@ -24,7 +24,9 @@
 
         .header {
             /*Margem interna*/
-            padding: 40px;
+            /*rem, unidade relativa. 1rem é igual ao tamonho padrão da fonte raiz,             
+              normalmente 16px*/
+            padding: 2.5px;
         }
 
         .flex-container {
@@ -36,58 +38,58 @@
 
         .header-title {
             color: #006F6F;
-            font-size: 32px;
+            font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 1.25px;
         } 
 
         .header-subtitle {
             color: #009E9E;
-            font-size: 20px;
+            font-size: 1.2rem;
             font-weight: 500;            
-            margin-bottom: 15px;            
+            margin-bottom: 0.93rem;            
         } 
 
         .col-1 {
             background-color: #006A6A;
             width: 50%;
-            padding: 20px;
+            padding: 1.25rem;
             color: #FFFFFF;
         }
 
         .col-2 {
             background-color: #009E9E;
             width: 50%;
-            padding: 10px 20px;
+            padding: 0.62rem 1.25rem;
             color: #FFF;
         }    
         
         .subscription-title {
-            font-size: 20px;
+            font-size: 1.25rem;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
 
         .price {
-            font-size: 26px;
+            font-size: 1.62rem;
             font-weight: 700;
         }
 
         .month {
-            font-size: 15px;
+            font-size: 0.93rem;
             font-style: italic;
-            margin-left: 15px;
+            margin-left: 0.93rem;
         }        
 
         .button {
             width: 100%;
             /*Define espaço ao redor do elemento*/
-            padding: 15px 32px;
+            padding: 0.93rem 2rem;
             color: #006A6A;
-            font-size: 16px;
+            font-size: 1rem;
             border-radius: 4px;
             border: none;
-            margin-top: 20px;
+            margin-top: 1.25rem;
             cursor: pointer;
             background-color: #CCCCCC;
         }
@@ -98,6 +100,29 @@
 
         .image-group {
             text-align: center;
+        }
+
+        /*
+        Media query, é uma estrutura do CSS que permite aplicar estilizações de acordo com devive  
+        que a apresenta, fazendo a página se adequar ao layout de tela em diferentes tamanhos e tipos 
+        de mídia.
+        */
+        @media screen and (max-width: 620px) {
+            html {
+                font-size: 14px;
+            }
+
+            .flex-container {
+                flex-direction: column;    
+            }
+            .col-1, .col-2 {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .container {
+                width: 95%;
+            }
+            
         }
                                 
         
