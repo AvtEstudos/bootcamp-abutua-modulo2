@@ -1,0 +1,118 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: #E9E9E9;
+    margin: auto;            
+    width: 600px;
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
+    /*Borda superior*/
+    border-radius: 5px;
+    /*Borda inferior*/
+    overflow: hidden;
+}
+
+.header {
+    /*Margem interna*/
+    /*rem, unidade relativa. 1rem é igual ao tamonho padrão da fonte raiz,             
+      normalmente 16px*/
+    padding: 2.5px;
+}
+
+.flex-container {
+    /*Distribuição dos elementos*/    
+    display: flex;            
+    /*Preenchendo com espaços ao lado*/
+    justify-content: space-around;            
+}
+
+.header-title {
+    color: #006F6F;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.25px;
+} 
+
+.header-subtitle {
+    color: #009E9E;
+    font-size: 1.2rem;
+    font-weight: 500;            
+    margin-bottom: 0.93rem;            
+} 
+
+.col-1 {
+    background-color: #006A6A;
+    width: 50%;
+    padding: 1.25rem;
+    color: #FFFFFF;
+}
+
+.col-2 {
+    background-color: #009E9E;
+    width: 50%;
+    padding: 0.62rem 1.25rem;
+    color: #FFF;
+}    
+
+.subscription-title {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.price {
+    font-size: 1.62rem;
+    font-weight: 700;
+}
+
+.month {
+    font-size: 0.93rem;
+    font-style: italic;
+    margin-left: 0.93rem;
+}        
+
+.button {
+    width: 100%;
+    /*Define espaço ao redor do elemento*/
+    padding: 0.93rem 2rem;
+    color: #006A6A;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    margin-top: 1.25rem;
+    cursor: pointer;
+    background-color: #CCCCCC;
+}
+
+.button:hover{
+    background-color: #E9E9E9;    
+}
+
+.image-group {
+    text-align: center;
+}
+
+/*
+Media query, é uma estrutura do CSS que permite aplicar estilizações de acordo com devive  
+que a apresenta, fazendo a página se adequar ao layout de tela em diferentes tamanhos e tipos 
+de mídia.
+*/
+@media screen and (max-width: 620px) {
+    html {
+        font-size: 14px;
+    }
+
+    .flex-container {
+        flex-direction: column;    
+    }
+    .col-1, .col-2 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 95%;
+    }
+    
+}
