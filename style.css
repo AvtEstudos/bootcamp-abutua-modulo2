@@ -94,7 +94,7 @@ input:focus {
     margin-left: 0.93rem;
 }        
 
-.button {
+button {
     margin-top: 1.25rem;
     
     width: 100%;
@@ -112,7 +112,7 @@ input:focus {
     
 }
 
-.button:hover{
+button:hover{
     background-color: #E9E9E9;    
 }
 
